@@ -1,0 +1,506 @@
+[
+  {
+    "id": "thermodynamics",
+    "name": "Thermodynamics",
+    "description": "Study of energy, heat, work, entropy, and the spontaneity of processes.",
+    "dependsOn": [],
+    "subskills": [
+      {
+        "id": "first_law",
+        "name": "First Law",
+        "resources": [
+          {
+            "type": "course",
+            "title": "MIT OCW Thermodynamics & Kinetics",
+            "url": "https://ocw.mit.edu",
+            "duration": "12 hours"
+          }
+        ]
+      },
+      {
+        "id": "second_law",
+        "name": "Second Law",
+        "resources": [
+          {
+            "type": "video",
+            "title": "LearnChemE Thermodynamics Overview",
+            "url": "https://youtube.com/learncheme",
+            "duration": "45 mins"
+          }
+        ]
+      },
+      {
+        "id": "entropy",
+        "name": "Entropy",
+        "resources": []
+      },
+      {
+        "id": "phase_equilibrium",
+        "name": "Phase Equilibrium",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "fluid_mechanics",
+    "name": "Fluid Mechanics",
+    "description": "Study of fluids at rest and in motion, crucial for pipeline sizing and mixing.",
+    "dependsOn": ["thermodynamics"],
+    "subskills": [
+      {
+        "id": "reynolds_number",
+        "name": "Reynolds Number",
+        "resources": [
+          {
+            "type": "article",
+            "title": "Understanding Flow Regimes",
+            "url": "https://engineering.com",
+            "duration": "10 mins"
+          }
+        ]
+      },
+      {
+        "id": "bernoulli_equation",
+        "name": "Bernoulli Equation",
+        "resources": [
+          {
+            "type": "video",
+            "title": "Fluid Mechanics Fundamentals",
+            "url": "https://youtube.com",
+            "duration": "1 hour"
+          }
+        ]
+      },
+      {
+        "id": "laminar_flow",
+        "name": "Laminar Flow",
+        "resources": []
+      },
+      {
+        "id": "turbulent_flow",
+        "name": "Turbulent Flow",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "heat_transfer",
+    "name": "Heat Transfer",
+    "description": "Principles of conduction, convection, and radiation for heat exchanger design.",
+    "dependsOn": ["thermodynamics", "fluid_mechanics"],
+    "subskills": [
+      {
+        "id": "conduction",
+        "name": "Conduction",
+        "resources": [
+          {
+            "type": "book",
+            "title": "Incropera's Fundamentals of Heat Transfer",
+            "url": "https://amazon.com",
+            "duration": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "convection",
+        "name": "Convection",
+        "resources": [
+          {
+            "type": "video",
+            "title": "Heat Exchangers Explained",
+            "url": "https://youtube.com",
+            "duration": "30 mins"
+          }
+        ]
+      },
+      {
+        "id": "radiation",
+        "name": "Radiation",
+        "resources": []
+      },
+      {
+        "id": "heat_exchangers",
+        "name": "Heat Exchangers",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "mass_transfer",
+    "name": "Mass Transfer",
+    "description": "Focuses on diffusion, absorption, extraction, and separating mixtures.",
+    "dependsOn": ["heat_transfer"],
+    "subskills": [
+      {
+        "id": "diffusion",
+        "name": "Diffusion",
+        "resources": [
+          {
+            "type": "course",
+            "title": "Separation Processes",
+            "url": "https://coursera.org",
+            "duration": "6 weeks"
+          }
+        ]
+      },
+      {
+        "id": "fick_s_law",
+        "name": "Fick's Law",
+        "resources": [
+          {
+            "type": "article",
+            "title": "Fick's Laws Simplified",
+            "url": "https://wikipedia.org",
+            "duration": "15 mins"
+          }
+        ]
+      },
+      {
+        "id": "gas_absorption",
+        "name": "Gas Absorption",
+        "resources": []
+      },
+      {
+        "id": "liquid_extraction",
+        "name": "Liquid Extraction",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "reaction_engineering",
+    "name": "Reaction Engineering",
+    "description": "Kinetics and reactor design for chemical and biological transformations.",
+    "dependsOn": ["mass_transfer"],
+    "subskills": [
+      {
+        "id": "rate_laws",
+        "name": "Rate Laws",
+        "resources": [
+          {
+            "type": "book",
+            "title": "Elements of Chemical Reaction Engineering",
+            "url": "https://amazon.com",
+            "duration": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "arrhenius_equation",
+        "name": "Arrhenius Equation",
+        "resources": [
+          {
+            "type": "video",
+            "title": "Kinetics Basics",
+            "url": "https://youtube.com",
+            "duration": "40 mins"
+          }
+        ]
+      },
+      {
+        "id": "catalysis",
+        "name": "Catalysis",
+        "resources": []
+      },
+      {
+        "id": "reactor_design",
+        "name": "Reactor Design",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "process_simulation",
+    "name": "Process Simulation",
+    "description": "Flowsheeting and thermodynamic modeling to predict plant performance.",
+    "dependsOn": ["reaction_engineering"],
+    "subskills": [
+      {
+        "id": "mass_balances",
+        "name": "Mass Balances",
+        "resources": [
+          {
+            "type": "video",
+            "title": "Aspen Plus Intro",
+            "url": "https://youtube.com",
+            "duration": "1 hour"
+          }
+        ]
+      },
+      {
+        "id": "energy_balances",
+        "name": "Energy Balances",
+        "resources": [
+          {
+            "type": "article",
+            "title": "Degrees of Freedom Analysis",
+            "url": "https://learncheme.com",
+            "duration": "20 mins"
+          }
+        ]
+      },
+      {
+        "id": "flowsheeting",
+        "name": "Flowsheeting",
+        "resources": []
+      },
+      {
+        "id": "thermodynamic_models",
+        "name": "Thermodynamic Models",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "bioreactor_design",
+    "name": "Bioreactor Design",
+    "description": "Sizing and operating vessels containing microorganisms or enzymes.",
+    "dependsOn": [],
+    "subskills": [
+      {
+        "id": "batch_reactors",
+        "name": "Batch Reactors",
+        "resources": [
+          {
+            "type": "course",
+            "title": "Biochemical Engineering",
+            "url": "https://edx.org",
+            "duration": "4 weeks"
+          }
+        ]
+      },
+      {
+        "id": "fed_batch_reactors",
+        "name": "Fed-batch Reactors",
+        "resources": [
+          {
+            "type": "article",
+            "title": "Oxygen Transfer Rate in Fermenters",
+            "url": "https://science-direct.com",
+            "duration": "15 mins"
+          }
+        ]
+      },
+      {
+        "id": "continuous_reactors",
+        "name": "Continuous Reactors",
+        "resources": []
+      },
+      {
+        "id": "oxygen_transfer",
+        "name": "Oxygen Transfer",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "enzyme_kinetics",
+    "name": "Enzyme Kinetics",
+    "description": "Study of reaction rates catalyzed by enzymes.",
+    "dependsOn": [],
+    "subskills": [
+      {
+        "id": "michaelis_menten",
+        "name": "Michaelis-Menten",
+        "resources": [
+          {
+            "type": "video",
+            "title": "Khan Academy: Enzyme Kinetics",
+            "url": "https://khanacademy.org",
+            "duration": "25 mins"
+          }
+        ]
+      },
+      {
+        "id": "lineweaver_burk",
+        "name": "Lineweaver-Burk",
+        "resources": [
+          {
+            "type": "article",
+            "title": "Inhibition Types",
+            "url": "https://nature.com",
+            "duration": "10 mins"
+          }
+        ]
+      },
+      {
+        "id": "enzyme_inhibition",
+        "name": "Enzyme Inhibition",
+        "resources": []
+      },
+      {
+        "id": "allosteric_regulation",
+        "name": "Allosteric Regulation",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "metabolic_engineering",
+    "name": "Metabolic Engineering",
+    "description": "Optimization of cellular processes to increase production of substances.",
+    "dependsOn": [],
+    "subskills": [
+      {
+        "id": "metabolic_pathways",
+        "name": "Metabolic Pathways",
+        "resources": [
+          {
+            "type": "book",
+            "title": "Metabolic Engineering Principles",
+            "url": "https://amazon.com",
+            "duration": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "flux_balance_analysis",
+        "name": "Flux Balance Analysis",
+        "resources": [
+          {
+            "type": "course",
+            "title": "Systems Biology",
+            "url": "https://coursera.org",
+            "duration": "5 weeks"
+          }
+        ]
+      },
+      {
+        "id": "gene_knockouts",
+        "name": "Gene Knockouts",
+        "resources": []
+      },
+      {
+        "id": "synthetic_biology",
+        "name": "Synthetic Biology",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "bioprocess_control",
+    "name": "Bioprocess Control",
+    "description": "Maintaining strict biological conditions using sensors and loops.",
+    "dependsOn": [],
+    "subskills": [
+      {
+        "id": "pid_control",
+        "name": "PID Control",
+        "resources": [
+          {
+            "type": "video",
+            "title": "PID Controllers Explained",
+            "url": "https://youtube.com",
+            "duration": "20 mins"
+          }
+        ]
+      },
+      {
+        "id": "biosensors",
+        "name": "Biosensors",
+        "resources": [
+          {
+            "type": "article",
+            "title": "Dissolved Oxygen Control Strategy",
+            "url": "https://isa.org",
+            "duration": "15 mins"
+          }
+        ]
+      },
+      {
+        "id": "feedback_loops",
+        "name": "Feedback Loops",
+        "resources": []
+      },
+      {
+        "id": "cascade_control",
+        "name": "Cascade Control",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "python_for_engineers",
+    "name": "Python for Engineers",
+    "description": "Fundamentals of programming for data analysis and numerical modeling.",
+    "dependsOn": [],
+    "subskills": [
+      {
+        "id": "data_types",
+        "name": "Data Types",
+        "resources": [
+          {
+            "type": "course",
+            "title": "Python for Everybody",
+            "url": "https://coursera.org",
+            "duration": "8 weeks"
+          }
+        ]
+      },
+      {
+        "id": "loops",
+        "name": "Loops",
+        "resources": [
+          {
+            "type": "video",
+            "title": "NumPy & Pandas Crash Course",
+            "url": "https://youtube.com",
+            "duration": "2 hours"
+          }
+        ]
+      },
+      {
+        "id": "pandas",
+        "name": "Pandas",
+        "resources": []
+      },
+      {
+        "id": "matplotlib",
+        "name": "Matplotlib",
+        "resources": []
+      }
+    ]
+  },
+  {
+    "id": "bioinformatics",
+    "name": "Bioinformatics",
+    "description": "Computational methods for analyzing biological data such as genetic sequences.",
+    "dependsOn": [],
+    "subskills": [
+      {
+        "id": "sequence_alignment",
+        "name": "Sequence Alignment",
+        "resources": [
+          {
+            "type": "course",
+            "title": "Bioinformatics Specialization",
+            "url": "https://coursera.org",
+            "duration": "10 weeks"
+          }
+        ]
+      },
+      {
+        "id": "genomics",
+        "name": "Genomics",
+        "resources": [
+          {
+            "type": "article",
+            "title": "Introduction to Sequence Alignment",
+            "url": "https://nature.com",
+            "duration": "20 mins"
+          }
+        ]
+      },
+      {
+        "id": "protein_structure",
+        "name": "Protein Structure",
+        "resources": []
+      },
+      {
+        "id": "phylogenetics",
+        "name": "Phylogenetics",
+        "resources": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "process_engineer",
+    "name": "Process Engineer",
+    "description": "Designs, operates, and optimizes chemical and biochemical processes.",
+    "difficulty": "Advanced",
+    "avgSalary": "$90,000",
+    "learningTime": "6 months",
+    "skills": [
+      "thermodynamics",
+      "fluid_mechanics",
+      "heat_transfer",
+      "mass_transfer",
+      "reaction_engineering",
+      "process_simulation",
+      "python_for_engineers"
+    ]
+  },
+  {
+    "id": "bioprocess_engineer",
+    "name": "Bioprocess Engineer",
+    "description": "Develops and scales up biological processes for manufacturing.",
+    "difficulty": "Advanced",
+    "avgSalary": "$95,000",
+    "learningTime": "8 months",
+    "skills": [
+      "thermodynamics",
+      "fluid_mechanics",
+      "mass_transfer",
+      "bioreactor_design",
+      "enzyme_kinetics",
+      "bioprocess_control",
+      "python_for_engineers"
+    ]
+  },
+  {
+    "id": "biotech_research_scientist",
+    "name": "Biotechnology Research Scientist",
+    "description": "Conducts research to develop new biotechnological products and metabolic pathways.",
+    "difficulty": "Advanced",
+    "avgSalary": "$105,000",
+    "learningTime": "12 months",
+    "skills": [
+      "enzyme_kinetics",
+      "metabolic_engineering",
+      "bioreactor_design",
+      "reaction_engineering",
+      "bioprocess_control",
+      "python_for_engineers"
+    ]
+  }
+]
