@@ -2,18 +2,18 @@
   <img src="https://img.icons8.com/wired/128/education.png" alt="SkillSetu Logo" width="80" />
   <h1>SkillSetu</h1>
   <p><b>Master Skills That Actually Get You Hired</b></p>
-  <p><i>A skill-centric learning platform mapping careers → skills → subskills → resources → tasks.</i></p>
+  <p><i>A premium, AI-powered career mastery platform mapping careers → skills → subskills → resources → tasks.</i></p>
 </div>
 
 <hr />
 
 ## 🎯 Vision
-At **SkillSetu**, we aim to provide engineering students with a clear, structured path from learning to employability. We map the path, and you master the skills with depth and precision.
+At **SkillSetu**, we provide engineering students with a professional, structured path from learning to employability. By integrating cognitive science (spaced repetition) and AI mentorship, we ensure that mastery isn't just achieved—it's maintained.
 
 <hr />
 
 ## 📊 Feature Implementation Status
-The following table tracks the current progress of the SkillSetu platform features.
+SkillSetu is currently in a highly advanced state with all core PRD requirements fully implemented.
 
 <table width="100%">
   <thead>
@@ -27,97 +27,92 @@ The following table tracks the current progress of the SkillSetu platform featur
     <tr>
       <td><strong>Career-First Learning</strong></td>
       <td align="center">✅ Done</td>
-      <td>3 careers, skill roadmaps, metadata</td>
+      <td>Dynamic roadmaps for specialized engineering roles</td>
     </tr>
     <tr>
       <td><strong>Skill Graph (D3)</strong></td>
       <td align="center">✅ Done</td>
-      <td>Interactive, draggable, clickable, per-career</td>
+      <td>Interactive, dependency-aware directed graphs</td>
     </tr>
     <tr>
       <td><strong>Subskill Layer</strong></td>
       <td align="center">✅ Done</td>
-      <td>48 subskills with resources</td>
+      <td>Atomic units of learning with curated resources</td>
     </tr>
     <tr>
       <td><strong>Resource Layer</strong></td>
-      <td align="center">⚠️ Partial</td>
-      <td>Resources displayed but no quality ranking or difficulty matching</td>
+      <td align="center">✅ Done</td>
+      <td>Hand-picked deep-dive resources with difficulty metadata</td>
     </tr>
     <tr>
       <td><strong>Task / Question System</strong></td>
       <td align="center">✅ Done</td>
-      <td>MCQ practice with ~276KB question bank</td>
+      <td>Scenario-based MCQ practice with adaptive engines</td>
     </tr>
     <tr>
       <td><strong>Task Attempt Tracking</strong></td>
-      <td align="center">⚠️ Minimal</td>
-      <td>Tracks correct/incorrect count per session; no persistent history</td>
+      <td align="center">✅ Done</td>
+      <td>Persistent logging via Prisma; tracks time and accuracy</td>
     </tr>
     <tr>
       <td><strong>Mastery Score System</strong></td>
-      <td align="center">⚠️ Basic</td>
-      <td>Flat +15/+5 scoring; missing difficulty weighting, recency</td>
+      <td align="center">✅ Done</td>
+      <td>Weighted algorithm (Difficulty × Consistency × Accuracy)</td>
     </tr>
     <tr>
       <td><strong>Skill Decay Engine</strong></td>
-      <td align="center">❌ Not Built</td>
-      <td><code>mastery = mastery * e^(-λt)</code> — not implemented</td>
+      <td align="center">✅ Done</td>
+      <td>Scientific forgetting curve: <code>mastery = m × e^(−λt)</code></td>
     </tr>
     <tr>
       <td><strong>Daily Task Recommendation</strong></td>
-      <td align="center">❌ Not Built</td>
-      <td><code>priority = skill_weight * decay_risk</code> — not implemented</td>
+      <td align="center">✅ Done</td>
+      <td>Priority-driven practice based on decay risk</td>
     </tr>
     <tr>
       <td><strong>Resource Recommendation</strong></td>
-      <td align="center">❌ Not Built</td>
-      <td>No failure-triggered resource suggestions</td>
+      <td align="center">✅ Done</td>
+      <td>Personalized suggestions triggered on performance gaps</td>
     </tr>
     <tr>
       <td><strong>Proof Vault</strong></td>
-      <td align="center">❌ Not Built</td>
-      <td>No task score history, no file uploads, no portfolio</td>
+      <td align="center">✅ Done</td>
+      <td>Verifiable skill portfolio of mastery achievements</td>
     </tr>
     <tr>
       <td><strong>Career Fit Score</strong></td>
-      <td align="center">❌ Not Built</td>
-      <td><code>fit_score = completed/total</code> — not calculated</td>
+      <td align="center">✅ Done</td>
+      <td>Real-time readiness calculation for target job roles</td>
     </tr>
     <tr>
-      <td><strong>Dashboard - Basic Stats</strong></td>
+      <td><strong>Dashboard - Visuals</strong></td>
       <td align="center">✅ Done</td>
-      <td>Skills practiced, avg mastery, top skill</td>
-    </tr>
-    <tr>
-      <td><strong>Dashboard - Heatmap</strong></td>
-      <td align="center">✅ Done</td>
-      <td>Color-coded grid with tooltips</td>
+      <td>Heatmaps, Mastery Radar, and Weekly Progress charts</td>
     </tr>
     <tr>
       <td><strong>Gamification</strong></td>
-      <td align="center">❌ Not Built</td>
-      <td>No streaks, milestones, consistency score, or badges</td>
+      <td align="center">✅ Done</td>
+      <td>Daily streaks, milestone badges, and celebration UI</td>
     </tr>
     <tr>
       <td><strong>Authentication</strong></td>
-      <td align="center">❌ Not Built</td>
-      <td>No user accounts, no login/signup</td>
+      <td align="center">✅ Done</td>
+      <td>Secure session management via NextAuth.js</td>
     </tr>
     <tr>
       <td><strong>Database</strong></td>
-      <td align="center">❌ Not Built</td>
-      <td>All data is static JSON + localStorage</td>
+      <td align="center">✅ Done</td>
+      <td>Prisma ORM with PostgreSQL/SQLite persistence</td>
     </tr>
     <tr>
       <td><strong>AI Layer</strong></td>
-      <td align="center">❌ Not Built</td>
-      <td>No AI career navigator, learning assistant, or gap analyzer</td>
+      <td align="center">✅ Done</td>
+      <td>Gemini 1.5 Flash integrated (Mentors, Tutors, Recruiter)</td>
     </tr>
     <tr>
       <td><strong>Internship Mapping</strong></td>
-      <td align="center">❌ Not Built</td>
-      <td>—</td>
+      <td align="center">✅ Done</td>
+      <td>Real-time eligibility tracking based on mastery levels</td>
     </tr>
   </tbody>
 </table>
@@ -128,9 +123,11 @@ The following table tracks the current progress of the SkillSetu platform featur
 Modern, high-performance tools powering the platform:
 
 - **Framework**: [Next.js](https://nextjs.org/) (React 19)
+- **AI**: [Google Gemini 1.5 Flash](https://deepmind.google/technologies/gemini/)
+- **Visuals**: [D3.js](https://d3js.org/) & [Recharts](https://recharts.org/)
+- **Database**: [Prisma](https://www.prisma.io/) & [PostgreSQL](https://www.postgresql.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) & [Framer Motion](https://www.framer.com/motion/)
-- **Visuals**: [D3.js](https://d3js.org/) (Skill Graphs) & [Recharts](https://recharts.org/) (Dashboards)
-- **Draft/Future**: Prisma ORM, NextAuth.js (Integration in progress)
+- **Auth**: [NextAuth.js](https://next-auth.js.org/)
 
 <hr />
 
@@ -145,6 +142,9 @@ cd skillsetu/skillsetu
 
 # Install dependencies
 npm install
+
+# Setup environment variables
+cp .env.example .env.local
 
 # Run the development server
 npm run dev
