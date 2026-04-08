@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://img.icons8.com/wired/128/education.png" alt="SkillSetu Logo" width="80" />
   <h1>SkillSetu</h1>
   <p><b>Master Skills That Actually Get You Hired</b></p>
   <p><i>A skill-centric learning platform mapping careers → skills → subskills → resources → tasks.</i></p>
