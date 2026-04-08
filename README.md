@@ -1,172 +1,154 @@
-<h1 align="center">SkillSetu</h1>
-<p align="center"><b>Master Skills That Actually Get You Hired</b></p>
+<div align="center">
+  <img src="https://img.icons8.com/wired/128/education.png" alt="SkillSetu Logo" width="80" />
+  <h1>SkillSetu</h1>
+  <p><b>Master Skills That Actually Get You Hired</b></p>
+  <p><i>A skill-centric learning platform mapping careers → skills → subskills → resources → tasks.</i></p>
+</div>
 
-<p align="center">
-A skill-centric learning platform that maps careers → skills → subskills → resources → tasks, and tracks mastery over time.
-</p>
+<hr />
 
-<hr>
+## 🎯 Vision
+At **SkillSetu**, we aim to provide engineering students with a clear, structured path from learning to employability. We map the path, and you master the skills with depth and precision.
 
-<h2>🚀 Core Concept</h2>
+<hr />
 
-<pre>
-Career → Skills → Subskills → Resources → Tasks → Mastery → Decay → Revision
-</pre>
+## 📊 Feature Implementation Status
+The following table tracks the current progress of the SkillSetu platform features.
 
-<ul>
-<li>No random learning</li>
-<li>No skill decay</li>
-<li>Direct path to job readiness</li>
-</ul>
+<table width="100%">
+  <thead>
+    <tr style="background-color: #1a1a1a;">
+      <th align="left">PRD Feature</th>
+      <th align="center">Status</th>
+      <th align="left">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Career-First Learning</strong></td>
+      <td align="center">✅ Done</td>
+      <td>3 careers, skill roadmaps, metadata</td>
+    </tr>
+    <tr>
+      <td><strong>Skill Graph (D3)</strong></td>
+      <td align="center">✅ Done</td>
+      <td>Interactive, draggable, clickable, per-career</td>
+    </tr>
+    <tr>
+      <td><strong>Subskill Layer</strong></td>
+      <td align="center">✅ Done</td>
+      <td>48 subskills with resources</td>
+    </tr>
+    <tr>
+      <td><strong>Resource Layer</strong></td>
+      <td align="center">⚠️ Partial</td>
+      <td>Resources displayed but no quality ranking or difficulty matching</td>
+    </tr>
+    <tr>
+      <td><strong>Task / Question System</strong></td>
+      <td align="center">✅ Done</td>
+      <td>MCQ practice with ~276KB question bank</td>
+    </tr>
+    <tr>
+      <td><strong>Task Attempt Tracking</strong></td>
+      <td align="center">⚠️ Minimal</td>
+      <td>Tracks correct/incorrect count per session; no persistent history</td>
+    </tr>
+    <tr>
+      <td><strong>Mastery Score System</strong></td>
+      <td align="center">⚠️ Basic</td>
+      <td>Flat +15/+5 scoring; missing difficulty weighting, recency</td>
+    </tr>
+    <tr>
+      <td><strong>Skill Decay Engine</strong></td>
+      <td align="center">❌ Not Built</td>
+      <td><code>mastery = mastery * e^(-λt)</code> — not implemented</td>
+    </tr>
+    <tr>
+      <td><strong>Daily Task Recommendation</strong></td>
+      <td align="center">❌ Not Built</td>
+      <td><code>priority = skill_weight * decay_risk</code> — not implemented</td>
+    </tr>
+    <tr>
+      <td><strong>Resource Recommendation</strong></td>
+      <td align="center">❌ Not Built</td>
+      <td>No failure-triggered resource suggestions</td>
+    </tr>
+    <tr>
+      <td><strong>Proof Vault</strong></td>
+      <td align="center">❌ Not Built</td>
+      <td>No task score history, no file uploads, no portfolio</td>
+    </tr>
+    <tr>
+      <td><strong>Career Fit Score</strong></td>
+      <td align="center">❌ Not Built</td>
+      <td><code>fit_score = completed/total</code> — not calculated</td>
+    </tr>
+    <tr>
+      <td><strong>Dashboard - Basic Stats</strong></td>
+      <td align="center">✅ Done</td>
+      <td>Skills practiced, avg mastery, top skill</td>
+    </tr>
+    <tr>
+      <td><strong>Dashboard - Heatmap</strong></td>
+      <td align="center">✅ Done</td>
+      <td>Color-coded grid with tooltips</td>
+    </tr>
+    <tr>
+      <td><strong>Gamification</strong></td>
+      <td align="center">❌ Not Built</td>
+      <td>No streaks, milestones, consistency score, or badges</td>
+    </tr>
+    <tr>
+      <td><strong>Authentication</strong></td>
+      <td align="center">❌ Not Built</td>
+      <td>No user accounts, no login/signup</td>
+    </tr>
+    <tr>
+      <td><strong>Database</strong></td>
+      <td align="center">❌ Not Built</td>
+      <td>All data is static JSON + localStorage</td>
+    </tr>
+    <tr>
+      <td><strong>AI Layer</strong></td>
+      <td align="center">❌ Not Built</td>
+      <td>No AI career navigator, learning assistant, or gap analyzer</td>
+    </tr>
+    <tr>
+      <td><strong>Internship Mapping</strong></td>
+      <td align="center">❌ Not Built</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
 
-<hr>
+<hr />
 
-<h2>🧠 Features</h2>
+## 🛠️ Tech Stack
+Modern, high-performance tools powering the platform:
 
-<h3>1. Career-First Learning</h3>
-<ul>
-<li>Select a target job role</li>
-<li>Get structured skill roadmap</li>
-<li>Track career readiness via fit score</li>
-</ul>
+- **Framework**: [Next.js](https://nextjs.org/) (React 19)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) & [Framer Motion](https://www.framer.com/motion/)
+- **Visuals**: [D3.js](https://d3js.org/) (Skill Graphs) & [Recharts](https://recharts.org/) (Dashboards)
+- **Draft/Future**: Prisma ORM, NextAuth.js (Integration in progress)
 
-<h3>2. Skill Graph</h3>
-<ul>
-<li>Directed graph of skills</li>
-<li>Dependency-based learning</li>
-<li>Subskills as atomic units</li>
-</ul>
+<hr />
 
-<h3>3. Mastery Tracking</h3>
-<ul>
-<li>Accuracy</li>
-<li>Difficulty</li>
-<li>Consistency</li>
-<li>Recency</li>
-</ul>
+## 🚀 Getting Started
 
-<h3>4. Skill Decay Engine</h3>
-<pre>mastery = mastery × e^(−λt)</pre>
-<ul>
-<li>Detects forgetting</li>
-<li>Triggers revision automatically</li>
-</ul>
+```bash
+# Clone the repository
+git clone https://github.com/your-repo/skillsetu.git
 
-<h3>5. Daily Task Recommendation</h3>
-<pre>priority = skill_weight × decay_risk</pre>
-<ul>
-<li>Focus on highest ROI learning</li>
-<li>Time-constrained scheduling</li>
-</ul>
+# Navigate to the project directory
+cd skillsetu/skillsetu
 
-<h3>6. Resource Recommendation</h3>
-<ul>
-<li>Triggered on failure or delay</li>
-<li>Shortest effective resource first</li>
-</ul>
+# Install dependencies
+npm install
 
-<h3>7. Proof Vault</h3>
-<ul>
-<li>Stores completed tasks</li>
-<li>Project files and outputs</li>
-<li>Acts as skill portfolio</li>
-</ul>
+# Run the development server
+npm run dev
+```
 
-<h3>8. Career Fit Score</h3>
-<pre>fit_score = completed_skills / total_required_skills</pre>
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<h3>9. Dashboard</h3>
-<ul>
-<li>Mastery heatmap</li>
-<li>Decay alerts</li>
-<li>Progress tracking</li>
-</ul>
-
-<h3>10. Gamification</h3>
-<ul>
-<li>Streaks</li>
-<li>Milestones</li>
-<li>Consistency score</li>
-</ul>
-
-<hr>
-
-<h2>🧱 System Flow</h2>
-
-<pre>
-User
- → Job Profile
- → Skills
- → Subskills
- → Resources
- → Tasks
- → Attempts
- → Mastery Update
- → Decay Engine
- → Daily Tasks
- → Career Fit
-</pre>
-
-<hr>
-
-<h2>🖥️ Tech Stack</h2>
-
-<h3>Frontend</h3>
-<ul>
-<li>Next.js</li>
-<li>TypeScript</li>
-<li>Tailwind CSS</li>
-<li>shadcn/ui</li>
-<li>Framer Motion</li>
-</ul>
-
-<h3>Backend</h3>
-<ul>
-<li>Node.js + tRPC</li>
-</ul>
-
-<h3>Database</h3>
-<ul>
-<li>PostgreSQL</li>
-<li>Prisma ORM</li>
-</ul>
-
-<h3>AI Layer</h3>
-<ul>
-<li>OpenAI API</li>
-</ul>
-
-<h3>Infra</h3>
-<ul>
-<li>Vercel</li>
-<li>Supabase</li>
-<li>Cloudflare R2</li>
-</ul>
-
-<hr>
-
-<h2>📊 Database (Core Tables)</h2>
-
-<ul>
-<li>user</li>
-<li>job_profile</li>
-<li>skill_node</li>
-<li>subskill_node</li>
-<li>task</li>
-<li>task_attempt</li>
-<li>resource</li>
-<li>user_skill_state</li>
-<li>skill_dependency</li>
-</ul>
-
-<hr>
-
-<h2>🎯 Vision</h2>
-
-<p>
-At SkillSetu, our goal is to become the global platform for engineering students to learn the right skills, master them with depth, and translate that mastery into real employability.
-</p>
-
-<p>
-We aim to build a system where every engineering branch — from core fields to emerging domains — has a clear, structured path from learning to getting hired.
-</p>
